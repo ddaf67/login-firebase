@@ -14,6 +14,7 @@
     <button id="btnRegistrar">Registrar</button>
     <!-- Area de cerrar sesion -->
     <h3 id="userEmail"></h3>
+    <button>cerrar sesion </button>
 
     <h1>Area de acceso</h1>
     <!-- el id no puede ser el mismo... sabes que solo debe haber un id en toda la pagina -->
@@ -79,9 +80,7 @@
 
                     // Obtener el email del usuario
                      const userEmail = user.email;
-
-                      // Actualizar el contenido del elemento h3 con el email del usuario
-            document.getElementById("userEmail").textContent = "logueado " + userEmail;
+                     document.getElementById("userEmail").textContent = "logueado " + userEmail;
 
                 })
                 .catch((error) => {
